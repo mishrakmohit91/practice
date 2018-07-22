@@ -1,0 +1,7 @@
+What does the if __name__ == "__main__": do?
+To outline the basics:
+The global variable, __name__, in the module that is the entry point to your program, is '__main__'.
+Otherwise, it's the name you import the module by.
+So, code under the if block will only run if the module is the entry point to your program.
+It allows the code in the module to be importable by other modules, without executing the code block beneath
+on import.
